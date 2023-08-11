@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserRoleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +72,33 @@ Route::get('/admin/artikel/create', function () {
 Route::get('/admin/changepassword', function () {
     return view('/admin/changepassword');
 });
+
+Route::get('/user/home', function () {
+    return view('/user/home');
+});
+
+Route::get('/user/artikel', function () {
+    return view('/user/artikel');
+});
+
+Route::get('/user/artikelread', function () {
+    return view('/user/artikelread');
+});
+
+Route::get('/user/kalkulator', function () {
+    return view('/user/kalkulator');
+});
+
+Route::get('/user/package', function () {
+    return view('/user/package');
+});
+
+
+Route::get('/user/changepassword', function () {
+    return view('/user/changepassword');
+});
+
+Route::get('/user/editprofil', function () {
+    return view('/user/editprofil');
+});
+
